@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numan</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #000000, #0d1b2a);
+      color: #dbe9f4;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* Parallax background */
+    .parallax {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at top, #0d1b2a, #000000);
+      z-index: -2;
+    }
+
+    /* Stars twinkling */
+    .stars span {
+      position: absolute;
+      display: block;
+      width: 3px;
+      height: 3px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 5s infinite ease-in-out;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+
+    /* Sections */
+    section {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #1e90ff;
+      margin-bottom: 25px;
+      letter-spacing: 3px;
+      text-shadow: 0 0 15px #1e90ff;
+      animation: glow 3s infinite alternate;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #87cefa;
+      text-shadow: 0 0 10px #1e90ff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.9;
+      max-width: 800px;
+      color: #cbd5e1;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 2s forwards;
+    }
+
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #1e90ff; }
+      to { text-shadow: 0 0 25px #1e90ff, 0 0 35px #00bfff; }
+    }
+
+    .emoji {
+      font-size: 2rem;
+      margin: 15px 5px;
+      animation: float 4s ease-in-out infinite;
+      display: inline-block;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    footer {
+      padding: 30px;
+      background: rgba(13, 27, 42, 0.8);
+      text-align: center;
+      font-size: 1rem;
+      color: #87cefa;
+      letter-spacing: 1px;
+      box-shadow: 0 -5px 20px rgba(0,0,0,0.6);
+    }
+  </style>
+</head>
+<body>
+  <!-- Background -->
+  <div class="parallax"></div>
+  <div class="stars">
+    <span style="top:10%; left:20%; animation-delay:0s;"></span>
+    <span style="top:30%; left:70%; animation-delay:1s;"></span>
+    <span style="top:50%; left:40%; animation-delay:2s;"></span>
+    <span style="top:80%; left:60%; animation-delay:3s;"></span>
+    <span style="top:20%; left:80%; animation-delay:4s;"></span>
+  </div>
+
+  <!-- Section 1 -->
+  <section>
+    <h1>Numan 💙🖤</h1>
+    <p>
+      Sometimes friendship feels like a story written in the stars ✨—bright, infinite, yet scattered. 
+      With you, Numan, it was laughter 😂, late talks 🌙, and a bond that felt unbreakable.
+    </p>
+    <div>
+      <span class="emoji">💙</span>
+      <span class="emoji">🖤</span>
+      <span class="emoji">💔</span>
+      <span class="emoji">🌌</span>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section>
+    <h2>The Memories</h2>
+    <p>
+      We built a world only we understood—inside jokes, little arguments, endless conversations.  
+      Every word carried meaning, every silence felt heavy. And even in heartbreak, the memories stayed,  
+      carved deep like constellations across the night sky 🌠.
+    </p>
+  </section>
+
+  <!-- Section 3 -->
+  <section>
+    <h2>The Silence</h2>
+    <p>
+      Then came the distance… the silence. 💔  
+      What once was loud with laughter turned quiet, but the echo never really faded.  
+      It lingers, like stars still shining even after they’ve burned out.
+    </p>
+  </section>
+
+  <!-- Section 4 -->
+  <section>
+    <h2>Always Here</h2>
+    <p>
+      This isn’t just friendship, and it isn’t just loss—it’s something more.  
+      A feeling that stays in the quietest corners, glowing faintly even in the darkest nights 🌌.  
+      No matter where life takes us, you’ll always be a chapter written deep in me 💙.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    ✨ Made with memories & emotions | For Numan 💙🖤
+  </footer>
+</body>
+    </html>
